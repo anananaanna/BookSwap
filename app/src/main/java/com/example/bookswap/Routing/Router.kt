@@ -10,16 +10,16 @@ import com.example.bookswap.viewmodels.BookViewModel
 @Composable
 fun Router(
     viewModel: AuthViewModel,
-    beachViewModel: BookViewModel
+    bookViewModel: BookViewModel
 ){
     val navController = rememberNavController()
     NavHost(navController = navController, startDestination = Routes.loginScreen) {
         composable(Routes.loginScreen)
         {
-            LoginScreen(
-                viewModel = viewModel,
-                navController = navController
-            )
+//            LoginScreen(
+//                viewModel = viewModel,
+//                navController = navController
+//            )
         }
     }
 }
