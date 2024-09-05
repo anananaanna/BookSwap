@@ -37,7 +37,6 @@ import com.example.bookswap.screens.components.CustomTable
 import com.example.bookswap.screens.components.headingText
 import com.example.bookswap.screens.components.mapFooter
 import com.example.bookswap.screens.components.mapNavigationBar
-import com.example.bookswap.ui.theme.lightMailColor
 import com.example.bookswap.viewmodels.BookViewModel
 import com.google.gson.Gson
 import kotlinx.coroutines.launch
@@ -54,6 +53,7 @@ fun TableScreen(
         mutableListOf<Book>()
     }
     if (books.isNullOrEmpty()){
+        bookViewModel.getAllBooks()
         val booksResource = bookViewModel.books.collectAsState()
         booksResource.value.let {
             when(it){

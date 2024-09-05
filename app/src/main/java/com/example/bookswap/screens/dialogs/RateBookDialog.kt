@@ -52,8 +52,8 @@ import androidx.compose.ui.unit.sp
 import com.example.bookswap.R
 import com.example.bookswap.ui.theme.buttonDisabledColor
 import com.example.bookswap.ui.theme.greyTextColor
-import com.example.bookswap.ui.theme.lightMailColor
 import com.example.bookswap.ui.theme.mainColor
+import com.example.bookswap.ui.theme.mainColor2
 
 @Composable
 fun RateBookDialog(
@@ -109,7 +109,7 @@ fun RateBookDialog(
                                     else Icons.Filled.StarBorder,
                                     contentDescription = "",
                                     tint =
-                                    if(rate.value >= i) lightMailColor
+                                    if(rate.value >= i) mainColor2
                                     else greyTextColor,
                                     modifier = Modifier
                                         .size(50.dp)

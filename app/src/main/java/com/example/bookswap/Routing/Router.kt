@@ -121,7 +121,7 @@ fun Router(
                 navArgument("isCameraSet") { type = NavType.BoolType },
                 navArgument("latitude") { type = NavType.FloatType },
                 navArgument("longitude") { type = NavType.FloatType },
-                navArgument("beaches") { type = NavType.StringType }
+                navArgument("books") { type = NavType.StringType }
             )
         ) { backStackEntry ->
             val isCameraSet = backStackEntry.arguments?.getBoolean("isCameraSet")

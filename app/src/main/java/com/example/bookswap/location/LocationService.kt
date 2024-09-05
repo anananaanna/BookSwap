@@ -147,7 +147,7 @@ class LocationService : Service() {
                 }
             }
             .addOnFailureListener { e ->
-                Log.e("LocationService", "Error fetching beaches", e)
+                Log.e("LocationService", "Error fetching books", e)
             }
     }
     private fun calculateDistance(lat1: Double, lon1: Double, lat2: Double, lon2: Double): Double {

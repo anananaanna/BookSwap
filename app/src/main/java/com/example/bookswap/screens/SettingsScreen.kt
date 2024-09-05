@@ -48,9 +48,9 @@ import com.example.bookswap.screens.components.CustomTable
 import com.example.bookswap.screens.components.mapFooter
 import com.example.bookswap.ui.theme.greyTextColor
 import com.example.bookswap.ui.theme.lightGreyColor
-import com.example.bookswap.ui.theme.lightMailColor
 import com.example.bookswap.ui.theme.lightMainColor2
 import com.example.bookswap.ui.theme.mainColor
+import com.example.bookswap.ui.theme.mainColor2
 import com.google.gson.Gson
 import java.net.URLEncoder
 import java.nio.charset.StandardCharsets
@@ -82,7 +82,7 @@ fun SettingScreen(
             Box(modifier = Modifier
                 .fillMaxWidth()
                 .background(
-                    lightMailColor,
+                    mainColor2,
                     RoundedCornerShape(bottomEnd = 50.dp, bottomStart = 50.dp)
                 )
                 .height(200.dp),
